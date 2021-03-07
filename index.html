@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+</head>
+<body>
+
+    <div style="background-image: url('5kl5_hfo2_190513.jpg');">
+
+    <div class="Title">
+        <h1 class="center">Math Is Fun Game</h1>
+    </div>
+
+
+    <div class="main-ui">
+        <p class="problem"></p>
+        <form action="" class="our-form">
+          <input type="text" class="our-field" autocomplete="off">
+          <button>Submit</button>
+        </form>
+      
+        <p class="status">You need <span class="points-needed">10</span> more points, and are allowed to make <span class="mistakes-allowed">2</span> more mistakes.</p>
+      
+        <div class="progress">
+          <div class="boxes">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+          <div class="progress-inner"></div>
+        </div>
+    </div>
+        <div class="Timer">
+            <div id="stopwatch">
+                00:00:00
+            </div>
+        
+            <ul id="buttons">
+                <li><button onclick="startTimer()">Start</button></li>
+                <li><button onclick="stopTimer()">Stop</button></li>
+        
+                <li><button onclick="resetTimer()">Reset</button></li>
+            </ul>
+        </div>-
+      
+      <!--The restart pop overlay & button after mistake is made or answer all questions correctly-->
+      <div class="overlay">
+            <div class="overlay-inner">
+          <p class="end-message"></p>
+          <button class="reset-button">Start Over</button>
+             </div>
+        </div>
+
+
+<script src="main.js"></script>
+
+
+</body>
